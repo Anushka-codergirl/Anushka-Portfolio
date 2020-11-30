@@ -207,3 +207,14 @@ footer i {
         color: #ff846e;    
     }
 }
+
+@media only screen and (max-width:600px){
+    .nav {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .nav li{
+        padding: 10px;
+    }
+}
