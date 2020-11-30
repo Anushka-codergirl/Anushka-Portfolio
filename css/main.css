@@ -1,9 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-body{
-    margin: 0;
+:root {
+    --primary: #1ba4bc;
+    --secondary:#ff846e;
+    --primary-dark:#3797a4;
+    --secondary-dark:#cee397;
+    --off-white: #e9e7e78e;
+    --white: #ffffff;
 }
 
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/*Nav Bar */
+.nav {
+    padding: 2.5rem 2.5rem 0rem 2rem;
+    margin-top: 10px;
+    font-family:  'Kaushan Script', cursive;
+    background-color: var(--off-white);
+    border-radius: 50%;
+}
+
+.nav .active-link {
+    font-weight: bolder;
+}
+.nav .brand {
+    font-family:  'Kaushan Script', cursive;
+    font-weight: bolder;
+    color: var(--primary-dark);
+}
+.nav li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+header {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 1rem;
+    font-family:  'Kaushan Script', cursive;
+}
+
+header .hero {
+    border-radius: 2rem;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
 .site-header{
     background-color: #1ba4bc;
     color: #ecfdf9;
@@ -16,18 +71,139 @@ body{
 }
 
 
-.profile-pic{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    box-shadow: #d8f1ec 2px 5px 5px ;
-}
-
 .site-header-content{
     margin: 1rem;
 }
 
+.site-header-content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+strong{
+    color: var(--primary-dark);
+}
+
+blockquote{
+    color:var(--secondary);
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.container{
+    background-color: var(--secondary);
+}
+.container-center{
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+h1,h2{
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+}
 a{
     text-decoration: none;
-    color: rgb(255, 81, 0);
+    color: var(--primary);
+    letter-spacing: 0.1rem;
+}
+
+a:visited{
+    color: var(--secondary);
+}
+
+.primary-link {
+    display: block;
+   color: var(--white);
+   text-decoration: none;
+   font-size: 1.1rem;
+   padding: 0.5rem;
+}
+
+.secondary-link {
+   display: block;
+   color: var(--white);
+   text-decoration: none;
+   font-size: 1.1rem;
+   padding: 0.5rem;
+}
+
+
+button{
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-primary-outline{
+    border: 1px solid var(--primary);
+    background-color:var(--white);
+    color: var(--primary);
+}
+/** Projects Page **/
+
+.projects .date {
+    margin-bottom: -0.7rem;
+    font-size: 0.8rem;
+    
+ }
+
+/** footer **/
+
+footer {
+    text-align: center;
+}
+
+footer li {
+    list-style: none;
+    padding: 0.5rem;
+    display: inline;
+    color: var(--secondary-dark);
+}
+
+
+footer p,a{   
+    font-family: 'Kaushan Script',cursive; 
+    position: left;   
+}
+
+.tech button i{
+    font-size: 25px;
+}
+
+.tech button{
+    font-size: 25px;
+    font-family: inherit;
+}
+
+footer i {
+    font-size: 30px;
+}
+
+.heart{
+    animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink{
+    from{
+        color: #fff;
+    }
+    to{
+        color: #ff846e;    
+    }
 }
