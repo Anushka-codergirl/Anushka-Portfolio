@@ -137,6 +137,34 @@ a:visited{
    padding: 0.5rem;
 }
 
+/*Icons Color*/
+.fa-html5{
+    color: #f0843b;
+}
+
+.fa-css3{
+    color: #284de3;
+}
+
+.fa-js{
+    color:#f0db4f;
+}
+
+.fa-node-js{
+    color: #4db151;
+}
+
+.fa-react{
+    color: skyblue;
+}
+
+.fa-code-branch{
+    color: red;
+}
+
+.fa-fire{
+    color: #ffcb00;
+}
 
 button{
     display: inline-block;
